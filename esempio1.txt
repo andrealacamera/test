@@ -1,0 +1,22 @@
+# Inizia nuovo progetto
+
+> git init
+> git touch esempio1.txt ## scrivi qualcosa nel file
+> git status ## per vedere i file del progetto e il loro stato
+> git add . ##per aggiungere tutti i file
+> git add esempio1.txt ##per aggiungere solo il file
+> git commit -m 'mio messaggio' esempio1.txt ## per committare il file e aggiungere il commento
+
+#tenere sotto controllo il progetto
+> git status
+> git log
+
+
+#per inviare il progetto al repository remoto:
+> git push
+> git push origin master ##origin master e' per default, cambiare a seconda delle necessita'
+
+#per aggiornare il progetto dal repository remoto:
+> git pull
+> git pull origin master ##origin master e' per default, cambiare a seconda delle necessita'
+
