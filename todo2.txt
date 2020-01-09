@@ -1,6 +1,0 @@
-#Altra lista TODO
-
-- quattro 
-- cinque
-- sei
-
