@@ -1,0 +1,46 @@
+# Inizia nuovo progetto
+
+> git init
+> git touch esempio1.txt ## scrivi qualcosa nel file
+> git status ## per vedere i file del progetto e il loro stato
+> git add . ##per aggiungere tutti i file
+> git add esempio1.txt ##per aggiungere solo il file
+> git commit -m 'mio messaggio' esempio1.txt ## per committare il file e aggiungere il commento
+
+#tenere sotto controllo il progetto
+> git status
+> git log
+
+
+#per inviare il progetto al repository remoto:
+> git push
+> git push origin master ##origin master e' per default, cambiare a seconda delle necessita'
+
+#per aggiornare il progetto dal repository remoto:
+> git pull
+> git pull origin master ##origin master e' per default, cambiare a seconda delle necessita'
+
+
+# cambiare le  aree di lavoro
+# master <--> nuova_area <--> altra_area
+> git branch ## mostra tutte le aree di lavoro e quella attiva al momento
+> git branch nuova_area ## crea nuova area di lavoro 
+> git checkout nuova_area ##passa alla nuova area
+
+(in questa nuova area possiamo creare nuovi files, oppure editare quelli del master -- che sono copiati qui con la creazione dell'area. Ovviamente si puo' fare git add, git commit, ecc... E le due aree contengono due versioni indipendenti del progetto. Per applicare le modifiche al branch master:
+> git checkout master ##ritorno al master
+> git merge nuova_area ## fa il merge tra il master (corrente) e quello in nuova_area
+
+Se vi sono conflitti tra i due rami, il file viene editato nel ramo attuale per cui si sta chiedendo il merging con le intestazioni:
+<<<<< HEAD
+....    qui ci sono i contenuti del file del 
+....    ramo attuale
+....
+....
+>>>>> MASTER
+....    qui ci sono le modifiche del ramo
+....    
+....
+
+meglio risolvere i conflitti nei rami separati piuttosto che nel ramo master,
+poi dopo fare il merge...
