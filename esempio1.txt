@@ -32,14 +32,13 @@
 > git merge nuova_area ## fa il merge tra il master (corrente) e quello in nuova_area
 
 Se vi sono conflitti tra i due rami, il file viene editato nel ramo attuale per cui si sta chiedendo il merging con le intestazioni:
-<<<<< HEAD
+<<<<<<< HEAD
 ....    qui ci sono i contenuti del file del 
-....    ramo attuale
-....
-....
->>>>> MASTER
+....    ramo attuale (master)
+=======
+>>>>>>> nuova_area
 ....    qui ci sono le modifiche del ramo
-....    
+....    da cui si sta facendo merging
 ....
 
 meglio risolvere i conflitti nei rami separati piuttosto che nel ramo master,
