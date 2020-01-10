@@ -1,8 +1,8 @@
 #Comandi di GIT ancora da esplorare:
 
-- git branch nome
-- git checkout nome
-- git merge nome
+- git branch nome [ok]
+- git checkout nome [ok]
+- git merge nome [ok]
 
 
 
