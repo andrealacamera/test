@@ -1,6 +1,6 @@
 # Inizia nuovo progetto
 
-> git init
+> git init ESEMPIO ORIGINALE
 > git touch esempio1.txt ## scrivi qualcosa nel file
 > git status ## per vedere i file del progetto e il loro stato
 > git add . ##per aggiungere tutti i file
